@@ -2,6 +2,7 @@
   "name": "astro-multi-project",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "dev:p1": "astro dev --root ./project1",
     "preview:p1": "astro preview --root ./project1",
