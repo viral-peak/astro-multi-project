@@ -1,0 +1,28 @@
+{
+  "name": "astro-multi-project",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev:p1": "astro dev --root ./project1",
+    "preview:p1": "astro preview --root ./project1",
+    "build:p1": "astro build --root ./project1",
+    "dev:p2": "astro dev --root ./project2",
+    "preview:p2": "astro preview --root ./project2",
+    "build:p2": "astro build --root ./project2",
+    "start": "astro dev",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/node": "^6.0.0",
+    "@astrojs/react": "^3.0.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^3.0.10",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1",
+    "tslib": "^2.6.2"
+  }
+}
