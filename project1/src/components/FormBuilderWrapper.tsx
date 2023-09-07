@@ -1,7 +1,7 @@
 import { StyledEngineProvider, ThemeProvider } from "@mui/material";
-import FormBuilder from "../../../formBuilder/src/components/main/FormBuilder";
 import createCustomTheme from "../styles/theme";
-import inputJSON from "../../../formBuilder/src/json/index.json";
+import inputJSON from "@formBuilder/json/index.json";
+import FormBuilder from "@formBuilder/components/main/FormBuilder";
 
 const FormBuilderWrapper = () => {
   const theme = createCustomTheme(false);

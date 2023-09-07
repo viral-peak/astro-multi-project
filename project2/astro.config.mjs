@@ -4,7 +4,6 @@ import node from "@astrojs/node";
 
 export default defineConfig({
   integrations: [react()],
-  base: "./project1",
   output:
     "hybrid" /* Hybrid: Most of the page will be SSG by default unless specified to use SSR */,
   adapter: node({
