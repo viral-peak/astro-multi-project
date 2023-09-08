@@ -11,7 +11,9 @@
     "verbatimModuleSyntax": false,
     "baseUrl": ".",
     "paths": {
-      "@formBuilder/*": ["formBuilder/src/*"]
+      "@formBuilder/*": ["formBuilder/src/*"],
+      "@p1/*": ["project1/src/*"],
+      "@p2/*": ["project2/src/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

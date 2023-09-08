@@ -1,10 +1,22 @@
 import { StyledEngineProvider, ThemeProvider } from "@mui/material";
-import createCustomTheme from "../styles/theme";
-import inputJSON from "@formBuilder/json/index.json";
 import FormBuilder from "@formBuilder/components/main/FormBuilder";
+import createCustomTheme from "@p1/styles/theme";
+import { useEffect, useState } from "react";
 
-const FormBuilderWrapper = () => {
+type propTypes = {
+  formId: string | undefined;
+};
+
+const FormBuilderWrapper = ({ formId }: propTypes) => {
   const theme = createCustomTheme(false);
+  const [inputJSON, setInputJSON] = useState({} as any);
+
+  const importFile = async () => {
+    const { default: data } = await import(`../json/${formId}.json`);
+    setInputJSON(data);
+  };
+
+  formId && importFile();
 
   return (
     <StyledEngineProvider injectFirst>

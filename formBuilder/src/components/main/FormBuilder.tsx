@@ -18,23 +18,18 @@ type PropTypes = {
 };
 
 const FormBuilder = (props: PropTypes) => {
-  const [schemaJSON, setSchemaJSON] = useState(schema);
   const {
     inputs: { inputSchema, uiSchema, ...rest },
     prefilledData,
   } = props;
 
-  useEffect(() => {
-    setSchemaJSON({
-      ...schema,
-      properties: inputSchema,
-      ...rest,
-    });
-  }, []);
-
   return (
     <Form
-      schema={schemaJSON}
+      schema={{
+        ...schema,
+        properties: inputSchema,
+        ...rest,
+      }}
       validator={validator}
       uiSchema={uiSchema}
       formData={prefilledData}
