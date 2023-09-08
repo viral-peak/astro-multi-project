@@ -1,0 +1,12 @@
+---
+import FormBuilderWrapper from '@p1/components/FormBuilderWrapper';
+import Layout from '@p1/layouts/Layout.astro';
+const { formId } = Astro.params;
+export const prerender = false; /* Specifying this page should be SSR */
+---
+
+<Layout title="Dynamic Form">
+	<main>  
+		<FormBuilderWrapper client:only="react" formId={formId} />
+	</main>
+</Layout>

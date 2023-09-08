@@ -1,6 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import FormBuilderWrapper from '../components/FormBuilderWrapper'
+import Layout from '@p1/layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Project 1">
@@ -34,7 +33,6 @@ import FormBuilderWrapper from '../components/FormBuilderWrapper'
 			</defs>
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Project 1</span></h1>
-		<FormBuilderWrapper client:only="react" />
 	</main>
 </Layout>
 <style>
