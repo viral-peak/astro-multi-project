@@ -1,5 +1,6 @@
 {
   "title": "Audit financials",
+  "ui:classNames": "main-container",
   "inputSchema": {
     "firstName": {
       "type": "string",

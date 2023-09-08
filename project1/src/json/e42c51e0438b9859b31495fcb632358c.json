@@ -1,5 +1,6 @@
 {
   "title": "PEAKXV PITSTOP",
+  "ui:classNames": "main-container",
   "required": ["firstName", "lastName"],
   "inputSchema": {
     "firstName": {

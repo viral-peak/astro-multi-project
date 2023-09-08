@@ -1,0 +1,17 @@
+.form-builder-root {
+  .main-container {
+    background: #f3f3f3;
+    padding: 24px;
+  }
+  .layout-root {
+    .elements-wrapper .element-container {
+      padding: 5px;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+  }
+}

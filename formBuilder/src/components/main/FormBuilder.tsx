@@ -37,8 +37,9 @@ const FormBuilder = (props: PropTypes) => {
       templates={{
         ObjectFieldTemplate: Layout,
       }}
+      className="form-builder-root"
     >
-      <div>
+      <div className="action-buttons">
         <Button variant="contained" type="submit">
           Submit
         </Button>
